@@ -13,8 +13,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.use("/api/user",userRoute)
-
-
 app.use(errorHandler.notFound)
 app.use(errorHandler.errorHandler)
 
